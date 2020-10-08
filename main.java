@@ -12,8 +12,9 @@ public class main {
             Node head = new Node(s.charAt(0));
             for(int i = 1; i < s.length(); i++)
                 head.add(new Node(s.charAt(i)));
-            InOrder inOrder = new InOrder(head);
-            System.out.println(inOrder.getOutput());
+            // InOrder inOrder = new InOrder(head);
+            // RevOrder revOrder = new RevOrder(head);
+            System.out.println(PostOrder.getOutput(head));
             
         }
     }

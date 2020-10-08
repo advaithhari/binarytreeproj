@@ -1,9 +1,12 @@
-import java.io.File;
-import java.util.*;
 public class RevOrder extends InOrder{
     Node myNode;
-    public RevOrder(){
-        myNode=Node;
+    public RevOrder(Node node){
+        super(node);
+        myNode=node;
     }
-    public String getOutput()
+    public String getOutputString(Node currNode){
+        StringBuilder x = new StringBuilder(getOutput(currNode));
+        x=x.reverse();
+        return x.toString();
+    }
 }
